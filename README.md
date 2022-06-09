@@ -45,10 +45,10 @@ Cada operacion que se realiza se registra en todos los ordenadores participantes
 ![](/image/funciona-blockchain.png)
 Fuente:https://labeabogados.com/digital-tecnologia/el-funcionamiento-del-blockchain/
 
-- Documentación de las Pipelines para los servicios.
+# Documentación de las Pipelines para los servicios.
 
 ## Microservicios
-- Login
+#### Login
 Este microservico se encargara de validar el ingreso de los ciudadanos que emitaran su voto por medio de las credenciales que furon proporcionados al realizar su registro.
 
 Ejemplo de entrada:
@@ -58,7 +58,7 @@ Ejemplo de entrada:
     "contrasenia":"123abc"
 }
 
-- Registro de usuario
+#### Registro de usuario
 Este microsercicio se encargara realizar el registro del ciudadano para que pueda realizar su voto cuando las votaciones esten activas.
 
 Ejemplo de entrada:
@@ -79,7 +79,7 @@ Ejemplo de entrada:
     "token":"123456789"
 }
 
-- Eleccion
+#### Eleccion
 Este microservicio se encragara de la creacion de una eleccion.
 
 ejemplo:
@@ -91,7 +91,7 @@ ejemplo:
     "fecha_fin":"01/01/2022 22:00:00"
 }
 
-- Ciudadano
+#### Ciudadano
 En este microservicio servira para poder simular los datos almacenados en RENAP, donde podremos obtener si el ciudadano es apto para votar:
 
 ejemplo:
@@ -101,13 +101,12 @@ ejemplo:
     "fecha":"01/01/1999"
 }
 
-- Voto
+#### Voto
 En este microservicio podra ingresar el boto seleccionado por el usuario, este debera de ser secreto.
 
 ejemplo:
 
 {
-
     "tituloVotacion":"selecion",
     "imagen":"<base64>"
     "Votacion": {
@@ -117,13 +116,13 @@ ejemplo:
     }
         
 }
-- ResultadoVotacion
+
+#### ResultadoVotacion
 En este microservicio se podra obtener los resultados de la votacion, ya sea preseidente, viceprecidente o dependiendo de la entidad publica que se esta eligiendo.
 
 ejemplo:
 
 {
-    
     "resultado":{
         "presidente":{
             "votosValidos":1000,
@@ -157,7 +156,7 @@ ejemplo:
 
 }
 
-- Auditoria
+#### Auditoria
 En este microservicio se podran obtener los votos que fueron realizado por los ciudadanos con fecha y hora realizada.
 
 ejemplo:
