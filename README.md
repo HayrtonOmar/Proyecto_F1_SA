@@ -1,12 +1,13 @@
-Universiad de San Carlos de Guatemala ![](/image/logousac.png)\
+Universiad de San Carlos de Guatemala                                                                                                ![](/image/logousac.png)\
 Escuela de Ciencia y Sistemas\
 Facultad de Ingeniería\
-Laboratorio de Software Avanzado\
+Laboratorio de Software Avanzado
 
 # *** Proyecto de Laboratorio Fase 1 ***
 
 
 ### Hayrton Omar Ixpatá Coloch - 201313875
+### Grupo 9
 
 ## yoVoto
 
@@ -142,7 +143,7 @@ ejemplo:
             ...
             ]
         }
-        vicepresidente:{
+        "vicepresidente":{
             "votosValidos":1000,
             "votosNulos":50,
             "partido":[{
