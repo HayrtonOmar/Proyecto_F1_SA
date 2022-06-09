@@ -52,17 +52,17 @@ Fuente:https://labeabogados.com/digital-tecnologia/el-funcionamiento-del-blockch
 Este microservico se encargara de validar el ingreso de los ciudadanos que emitaran su voto por medio de las credenciales que furon proporcionados al realizar su registro.
 
 Ejemplo de entrada:
-
+```json
 {
     "dpi":"1111222223333",
     "contrasenia":"123abc"
 }
-
+```
 #### Registro de usuario
 Este microsercicio se encargara realizar el registro del ciudadano para que pueda realizar su voto cuando las votaciones esten activas.
 
 Ejemplo de entrada:
-
+```json
 {
     "cui":"111122222333",
     "userAgent":"Android",
@@ -78,34 +78,37 @@ Ejemplo de entrada:
     "Ubicacion":"-55555555,22222222",
     "token":"123456789"
 }
+```
 
 #### Eleccion
 Este microservicio se encragara de la creacion de una eleccion.
 
 ejemplo:
-
+```json
 {
     "titulo":"elecion_2022",
     "descripcion":"primera vuelta",
     "fecha_inico":"01/01/2022 07:00:00",
     "fecha_fin":"01/01/2022 22:00:00"
 }
+```
 
 #### Ciudadano
 En este microservicio servira para poder simular los datos almacenados en RENAP, donde podremos obtener si el ciudadano es apto para votar:
 
 ejemplo:
-
+```json
 {
     "cui":"1111222223333",
     "fecha":"01/01/1999"
 }
+```
 
 #### Voto
 En este microservicio podra ingresar el boto seleccionado por el usuario, este debera de ser secreto.
 
 ejemplo:
-
+```json
 {
     "tituloVotacion":"selecion",
     "imagen":"<base64>"
@@ -116,12 +119,13 @@ ejemplo:
     }
         
 }
+```
 
 #### ResultadoVotacion
 En este microservicio se podra obtener los resultados de la votacion, ya sea preseidente, viceprecidente o dependiendo de la entidad publica que se esta eligiendo.
 
 ejemplo:
-
+```json
 {
     "resultado":{
         "presidente":{
@@ -155,12 +159,13 @@ ejemplo:
     }
 
 }
+```
 
 #### Auditoria
 En este microservicio se podran obtener los votos que fueron realizado por los ciudadanos con fecha y hora realizada.
 
 ejemplo:
-
+```json
 {
     "votosValidos":1000,
     "votosNulos":50,
@@ -178,3 +183,4 @@ ejemplo:
         ...
     ]
 }
+```
