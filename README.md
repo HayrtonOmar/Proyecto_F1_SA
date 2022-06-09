@@ -1,6 +1,6 @@
-Universiad de San Carlos de Guatemala ![](/image/logousac.png)
-Escuela de Ciencia y Sistemas
-Facultad de Ingeniería
+Universiad de San Carlos de Guatemala                                                                                                ![](/image/logousac.png)\
+Escuela de Ciencia y Sistemas\
+Facultad de Ingeniería\
 Laboratorio de Software Avanzado
 
 # *** Proyecto de Laboratorio Fase 1 ***
@@ -19,25 +19,25 @@ Para la construccion del proyecto se implementara una arquitectura SOA que tendr
 ![](/image/arquitectura.png)
 
 
-- Diagrama de actividades del microservicio de autenticación.
+#### Diagrama de actividades del microservicio de autenticación.
 
 ![](/image/diagramaActividadesAutenticacion.png)
 
-- Diagrama de actividades de emisión de voto
+#### Diagrama de actividades de emisión de voto
 
 ![](/image/EmisionVoto.png)
 
-- Diagrama de actividades del sistema de registro (enrollamiento) de ciudadanos.
+#### Diagrama de actividades del sistema de registro (enrollamiento) de ciudadanos.
 
 ![](/image/RegistroCiudadano.png)
 
-- Descripción de la seguridad de la aplicación.
+#### Descripción de la seguridad de la aplicación.
 Para la seguridad de los datos se utilizara JWT, que define un mecanismo para poder programa entre dos partes y de forma segura, que genera un token que tiene tres partes codificadas en Base64.
 
 Ademas de utilizar un token de autenticacion que validara que el usuario que se registro solo utilice un dispositivo, para ello se enviara un token al dispositivio que debera de ingresar el ciudadano con esto se validara que solo se utlice un unico dispositivo.
 
 
-- Descripción del uso de la tecnología blockchain.
+#### Descripción del uso de la tecnología blockchain.
 El blockchain, traducido del inglés como cadena de bloques, es una base de datos tecnológica y compartida que funciona como si fuera un libro en el que se registran las operaciones de compra-venta y otras transiciones.
 Es un registro público donde se comparten todas las transacciones jamás realizadas sobre algo en concreto, impidiendo de esta manera que se produzcan falsificaciones.
 Cada operacion que se realiza se registra en todos los ordenadores participantes en la cadena incluyendo datos como cantidad, fecha, operacion y participantes, al completarse la operacion y hacerse pubulica no se podra borrar, con esto se evita que se pueda falsificar la cadena
@@ -142,7 +142,7 @@ ejemplo:
             ...
             ]
         }
-        vicepresidente:{
+        "vicepresidente":{
             "votosValidos":1000,
             "votosNulos":50,
             "partido":[{
