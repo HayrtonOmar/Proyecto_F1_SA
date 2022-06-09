@@ -1,7 +1,7 @@
-Universiad de San Carlos de Guatemala ![](/image/logousac.png)
-Escuela de Ciencia y Sistemas
-Facultad de Ingeniería
-Laboratorio de Software Avanzado
+Universiad de San Carlos de Guatemala ![](/image/logousac.png)\
+Escuela de Ciencia y Sistemas\
+Facultad de Ingeniería\
+Laboratorio de Software Avanzado\
 
 # *** Proyecto de Laboratorio Fase 1 ***
 
@@ -13,31 +13,31 @@ Laboratorio de Software Avanzado
 yoVoto es un sistema de voto electrónico que permite a los ciudadanos del  país de manera segura y confiable votar a través de una página web o  teléfono inteligente. Este diseño facilita votar a personas localizadas en el  extranjero y en el territorio nacional utilizando el internet y dispositivos  móviles. Esta facilidad del voto sin embargo requiere mecanismos  especiales de seguridad y transparencia. Por lo que parte de los  requerimientos técnicos incluyen las garantías como: voto anónimo  (secreto) y voto único.
 
 ## Analisis de Solución propuesta
-- Comunicacion entre Servicios
+#### Comunicacion entre Servicios
 Para la construccion del proyecto se implementara una arquitectura SOA que tendra varios servicos que funcionaran de manera independiente aumentando la robustez del sistema, con esto evitamos de que un servicio falle afecte a todo nuestro sistema, para ello se propone el siguiente diagrama.
 
 ![](/image/arquitectura.png)
 
 
-- Diagrama de actividades del microservicio de autenticación.
+#### Diagrama de actividades del microservicio de autenticación.
 
 ![](/image/diagramaActividadesAutenticacion.png)
 
-- Diagrama de actividades de emisión de voto
+#### Diagrama de actividades de emisión de voto
 
 ![](/image/EmisionVoto.png)
 
-- Diagrama de actividades del sistema de registro (enrollamiento) de ciudadanos.
+#### Diagrama de actividades del sistema de registro (enrollamiento) de ciudadanos.
 
 ![](/image/RegistroCiudadano.png)
 
-- Descripción de la seguridad de la aplicación.
+#### Descripción de la seguridad de la aplicación.
 Para la seguridad de los datos se utilizara JWT, que define un mecanismo para poder programa entre dos partes y de forma segura, que genera un token que tiene tres partes codificadas en Base64.
 
 Ademas de utilizar un token de autenticacion que validara que el usuario que se registro solo utilice un dispositivo, para ello se enviara un token al dispositivio que debera de ingresar el ciudadano con esto se validara que solo se utlice un unico dispositivo.
 
 
-- Descripción del uso de la tecnología blockchain.
+#### Descripción del uso de la tecnología blockchain.
 El blockchain, traducido del inglés como cadena de bloques, es una base de datos tecnológica y compartida que funciona como si fuera un libro en el que se registran las operaciones de compra-venta y otras transiciones.
 Es un registro público donde se comparten todas las transacciones jamás realizadas sobre algo en concreto, impidiendo de esta manera que se produzcan falsificaciones.
 Cada operacion que se realiza se registra en todos los ordenadores participantes en la cadena incluyendo datos como cantidad, fecha, operacion y participantes, al completarse la operacion y hacerse pubulica no se podra borrar, con esto se evita que se pueda falsificar la cadena
