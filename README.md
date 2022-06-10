@@ -47,6 +47,9 @@ Cada operacion que se realiza se registra en todos los ordenadores participantes
 Fuente:https://labeabogados.com/digital-tecnologia/el-funcionamiento-del-blockchain/
 
 # Documentación de las Pipelines para los servicios.
+Jenkins es un servidor automatizado de integración continua de código abierto capaz de organizar una cadena de acciones que ayudan a lograr el proceso de integración continua  de manera automatizada.
+
+Jenkins está completamente escrito en Java y es una aplicación conocida y reconocida por DevOps de todo el mundo. La razón por la que Jenkins se hizo tan popular es porque se encarga de supervisar las tareas repetitivas que surgen dentro del desarrollo de un proyecto.
 
 ## Microservicios
 #### Login
